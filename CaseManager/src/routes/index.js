@@ -3,6 +3,7 @@ import CoreLayout from '../layouts/CoreLayout/CoreLayout'
 import Home from './Home'
 import TreeView from '../components/TreeView/TreeView'
 import TableView from '../components/TableView/TableView'
+import MyTreeView from '../components/MyTreeView/MyTreeView'
 
 export const createRoutes = (store) => {
 /*  Note: Instead of using JSX, we are using react-router PlainRoute,
@@ -13,8 +14,8 @@ export const createRoutes = (store) => {
     path: '/',
     component: CoreLayout,
     indexRoute: Home,
-      path: 'TableView',
-      component:TableView,
+      path: 'MyTreeView',
+      component:MyTreeView,
 
     getChildRoutes (location, next) {
       require.ensure([], (require) => {
